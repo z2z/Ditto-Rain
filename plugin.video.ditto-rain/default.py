@@ -13,9 +13,11 @@ import json
 from cookielib import LWPCookieJar
 
 addon_id = 'plugin.video.ditto-rain'
+addon_version = '2.0.1'
 addon = Addon(addon_id, sys.argv)
 Addon = xbmcaddon.Addon(addon_id)
 debug = Addon.getSetting('debug')
+
 
 socket.setdefaulttimeout(30)
 pluginhandle = int(sys.argv[1])
